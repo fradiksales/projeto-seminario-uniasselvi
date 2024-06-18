@@ -35,10 +35,10 @@
     <main>
         <div class="itens">
             <div class="container">
-                <?php
-                /** Arquivo de configuração do banco de dados */
-                include("./php/config.php");
-                switch (@$_REQUEST["page"]) {
+                    <?php
+                    /** Arquivo de configuração do banco de dados */
+                    include("./php/config.php");
+                    switch (@$_REQUEST["page"]) {
                     /**
                      * Todas as páginas devem ser criadas dentro da pasta pages
                      * e deve ser feito o include aqui criando um novo case
@@ -52,8 +52,8 @@
                     default:
                         include("./pages/listar.php");
                         break;
-                }
-                ?>
+                        }
+                        ?>
             </div>
         </div>
     </main>
